@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="ags_add_new_std">
      <widget class="QLabel" name="label">
@@ -40,7 +40,7 @@
        <string>Name</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="stdName">
       <property name="geometry">
        <rect>
         <x>220</x>
@@ -50,7 +50,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_2">
+     <widget class="QLineEdit" name="stdMidName">
       <property name="geometry">
        <rect>
         <x>335</x>
@@ -99,7 +99,7 @@
        <string>Date of Birth</string>
       </property>
      </widget>
-     <widget class="QDateEdit" name="dateEdit">
+     <widget class="QDateEdit" name="stdDOB">
       <property name="geometry">
        <rect>
         <x>220</x>
@@ -109,7 +109,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="stdGndr">
       <property name="geometry">
        <rect>
         <x>400</x>
@@ -118,8 +118,18 @@
         <height>31</height>
        </rect>
       </property>
+      <item>
+       <property name="text">
+        <string>Male</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Female</string>
+       </property>
+      </item>
      </widget>
-     <widget class="QComboBox" name="comboBox_2">
+     <widget class="QComboBox" name="stdClass">
       <property name="geometry">
        <rect>
         <x>220</x>
@@ -128,6 +138,81 @@
         <height>31</height>
        </rect>
       </property>
+      <item>
+       <property name="text">
+        <string>Nur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>L.K.G</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>U.K.G</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>I</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>II</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>III</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>IV</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>V</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VII</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VIII</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>IX</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>XI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>XII</string>
+       </property>
+      </item>
      </widget>
      <widget class="QLabel" name="label_6">
       <property name="geometry">
@@ -142,7 +227,7 @@
        <string>Gender</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="saveStdRecordBtn">
       <property name="geometry">
        <rect>
         <x>510</x>
@@ -155,7 +240,7 @@
        <string>Save</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="canclSave">
       <property name="geometry">
        <rect>
         <x>599</x>
@@ -217,7 +302,7 @@
        <string>Cast/Religion</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_3">
+     <widget class="QComboBox" name="stdCastRel">
       <property name="geometry">
        <rect>
         <x>400</x>
@@ -226,8 +311,28 @@
         <height>31</height>
        </rect>
       </property>
+      <item>
+       <property name="text">
+        <string>Hindu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Muslim</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sikh</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Christian</string>
+       </property>
+      </item>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_5">
+     <widget class="QLineEdit" name="stdLastName">
       <property name="geometry">
        <rect>
         <x>420</x>
@@ -250,7 +355,7 @@
        <string>Guardian/Father's Name</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_6">
+     <widget class="QLineEdit" name="stdGFName">
       <property name="geometry">
        <rect>
         <x>290</x>
@@ -273,7 +378,7 @@
        <string>Occupation</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_5">
+     <widget class="QComboBox" name="stdGFOcc">
       <property name="geometry">
        <rect>
         <x>590</x>
@@ -282,8 +387,43 @@
         <height>31</height>
        </rect>
       </property>
+      <item>
+       <property name="text">
+        <string>Farming</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Service</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Business</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Social Service</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Self Employed</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unemployed</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Other</string>
+       </property>
+      </item>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_7">
+     <widget class="QLineEdit" name="stdGMName">
       <property name="geometry">
        <rect>
         <x>291</x>
@@ -306,7 +446,7 @@
        <string>Occupation</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_6">
+     <widget class="QComboBox" name="stdGMOcc">
       <property name="geometry">
        <rect>
         <x>591</x>
@@ -315,6 +455,41 @@
         <height>31</height>
        </rect>
       </property>
+      <item>
+       <property name="text">
+        <string>Farming</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Service</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Business</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Social Service</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Self Employed</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unemployed</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Other</string>
+       </property>
+      </item>
      </widget>
      <widget class="QLabel" name="label_11">
       <property name="geometry">
@@ -342,7 +517,7 @@
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_8">
+     <widget class="QLineEdit" name="stdMobNum">
       <property name="geometry">
        <rect>
         <x>336</x>
@@ -355,7 +530,7 @@
        <string>Enter Mobile Number</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="stdSRName">
       <property name="geometry">
        <rect>
         <x>220</x>
@@ -378,32 +553,341 @@
        <string>Display Name</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_14">
+     <widget class="QLabel" name="stdAddress">
       <property name="geometry">
        <rect>
         <x>110</x>
-        <y>390</y>
+        <y>395</y>
         <width>67</width>
         <height>17</height>
        </rect>
       </property>
       <property name="text">
-       <string>Facilities</string>
+       <string>Address</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="stdLocality">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>393</y>
+        <width>67</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Locality</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="stdLocality_2">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>390</y>
+        <width>81</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Ravli</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kakra</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Khimawati</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dhindar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bandipur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kaithwadi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sarna</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Khurampur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Salemabad</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Jeetpur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Muradnagar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Jalalpur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Khiarajpur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kumehra</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gadhi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nekpur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gyaspur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bhaneda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suahana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suthari</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Surana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kunehda</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="stdAddr">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>390</y>
+        <width>281</width>
+        <height>34</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>430</y>
+        <width>571</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </widget>
     <widget class="QWidget" name="ags_std_detail">
-     <widget class="QLabel" name="label_2">
+     <widget class="QLineEdit" name="srchByStdName">
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>120</y>
-        <width>271</width>
-        <height>71</height>
+        <x>50</x>
+        <y>30</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>73</y>
+        <width>641</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="srchByStdFathName">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>30</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Father's Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="srchBySrNum">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>30</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>SR Number</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="srchByClass">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>30</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Class</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="searchBtn">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>30</y>
+        <width>131</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="text">
-       <string>View Student Details</string>
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="amntToBePaid">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>465</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="prevBal_4">
+      <property name="geometry">
+       <rect>
+        <x>421</x>
+        <y>457</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Amount to be Paid</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>440</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QTableView" name="stdsDataView">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>97</y>
+        <width>641</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="Line" name="line_11">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>268</y>
+        <width>641</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_10">
+      <property name="geometry">
+       <rect>
+        <x>419</x>
+        <y>494</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QTableView" name="stdFeeHistory">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>290</y>
+        <width>641</width>
+        <height>141</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -470,7 +954,7 @@
      <addaction name="separator"/>
      <addaction name="actionFine_Policy"/>
     </widget>
-    <addaction name="actionView"/>
+    <addaction name="feeDetailView"/>
     <addaction name="separator"/>
     <addaction name="actionCollect_2"/>
     <addaction name="separator"/>
@@ -581,7 +1065,7 @@
     <string>Open</string>
    </property>
   </action>
-  <action name="actionView">
+  <action name="feeDetailView">
    <property name="text">
     <string>View</string>
    </property>

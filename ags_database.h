@@ -15,12 +15,8 @@ class ags_database
         ags_database();
         ~ags_database();
 
-        void ags_setup_db(QString agsDbName);
-        void ags_get_glbl_qry_obj(void);
-
-    private:
-
-        QSqlDatabase m_db;
+        static void ags_get_db_instance(QString agsDbName);
+        static QSqlDatabase m_db;
 };
 
 #endif // AGS_DATABASE_H
