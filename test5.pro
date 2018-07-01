@@ -31,7 +31,11 @@ SOURCES += \
     ags_student_record.cpp \
     ags_database.cpp \
     ags_add_new_std.cpp \
-    ags_fee_module.cpp
+    ags_fee_module.cpp \
+    ags_fee_head.cpp \
+    ags_fine_head.cpp \
+    ags_student_view_details.cpp \
+    ags_fee_collect.cpp
 
 HEADERS += \
         ags_login_scrn.h \
@@ -39,7 +43,11 @@ HEADERS += \
     ags_student_record.h \
     ags_database.h \
     ags_add_new_std.h \
-    ags_fee_module.h
+    ags_fee_module.h \
+    ags_fee_head.h \
+    ags_fine_head.h \
+    ags_student_view_details.h \
+    ags_fee_collect.h
 
 FORMS += \
         ags_login_scrn.ui \

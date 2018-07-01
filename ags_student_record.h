@@ -2,7 +2,7 @@
 #define AGS_STUDENT_RECORD_H
 
 
-
+#include <qsqlquerymodel.h>
 #include <QString>
 #include <QDate>
 
@@ -14,6 +14,7 @@ class ags_student_record
     public:
 
         ags_student_record();
+        ~ags_student_record();
 
         void ags_set_std_name(QString agsName);
         void ags_set_std_mid_name(QString agsMidName);
@@ -28,13 +29,19 @@ class ags_student_record
         void ags_set_std_gf_occ(QString agsGFOcc);
         void ags_set_std_gm_occ(QString agsGMOcc);
         void ags_set_std_class(QString agsClass);
+        void ags_set_std_transport_fee(QString agsTrnsFee);
+        void ags_set_std_concession(QString agsConssn);
 
         void ags_set_std_address(QString agsAddr);
         void ags_set_std_locality(QString agsLocality);
 
-        void ags_save_std_data_into_db(void);
+        int ags_save_std_data_into_db(void);
+        void ags_updt_std_details_into_db(QString stdID);
+        QSqlQueryModel *get_all_std_db_model(void);
 
         QString ags_get_dspl_name(void);
+
+        QStringList get_all_std_ids_of_class(QString stdCls);
 
     private:
 
@@ -61,7 +68,10 @@ class ags_student_record
         QString m_stdAddr;
         QString m_stdLocality;
 
-        static int m_cntStd;
+        QString m_stdTrnsFee;
+        QString m_stdConssn;
+
+        QSqlQueryModel *m_stdDataModel;
 };
 
 #endif // AGS_STUDENT_RECORD_H
